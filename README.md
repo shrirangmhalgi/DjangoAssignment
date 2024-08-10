@@ -65,4 +65,85 @@ This is a repository to practice django skills: Screenshots are included for eac
     <h3> Success Page - </h3>
     <img src='screenshots/task 3.2 d.png'>
     <br>
+    <li> Signup view: Implement the Signup view in views.py, which handles user registration with inputs for name, email, and password. Ensure that the email field is unique.
+    <li> Login view: Implement the Login view in views.py, which requires inputs for email and password.
+    <br>
+    <img src='screenshots/task 3.3 3.4.png'>
+    <br>
 </ol>
+
+
+
+<h1> Task 4: MODELS & ADMIN - Set up a superuser account using Django's manage.py command and verify the superuser endpoint by accessing the admin interface to ensure proper configuration and functionality.</h1>
+
+
+<h2> Microtasks: Lets Dive into the Django Shell to explore the Power of Command Line Magic for Managing Your Django Project! python manage.py shell </h2>
+<ol>
+  <li> Setup Superuser - Create a superuser using Django's manage.py command. python manage.py createsuperuser - Verify the superuser endpoint by visiting the admin interface.
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.png'>
+    <br>
+  <li> Create a new user instance : new_user = User.objects.create(username="example_user", email="user@example.com", password="example123")
+  <li> Retrieve all Users : all_users = User.objects.all()
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.1 4.1.2.png'>
+    <br>
+  <li> Retrieve a single user by name: For example : username = “john” user_by_name = User.objects.get(username=username)
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.3.png'>
+    <br>
+  <li> Delete a user by username : username_to_delete= “john” user_to_delete = User.objects.get(username=username_to_delete)
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.4.png'>
+    <br>
+  <li> Create a new instance using object obj = YourModel.objects.create(field1=value1, field2=value2)
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.5.png'>
+    <br>
+  <li> Query objects queryset = YourModel.objects.filter(field1=value1)
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.6.png'>
+    <br>   
+  <li> Update an object obj.field1 = new_value obj.save()
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.7.png'>
+    <br>
+  <li> Delete an object obj.delete()
+    <br>
+    <br>
+    <img src='screenshots/task 4.1.8.png'>
+    <br>
+</ol>
+
+
+
+<h1> Task 5: CRUD OPERATIONS Implement CRUD (Create, Read, Update, Delete) operations for managing user data within the Django login system.</h1>
+
+<h2> Microtasks: </h2>
+<ol>
+  <li> 1. Implement CRUD Operations - Create four additional views functions for CRUD operations. Get all user details view: Retrieves and displays details of all users. Get a single user using by email view: Retrieves and displays details of a specific user based on their name. Update User details To delete a user using its email. - These views handle read, update, and delete operations for user data. - Use Postman to test and perform CRUD operations API’s.
+    <h3> Read - All Users</h3>
+    <br>
+    <img src='screenshots/task 5.1.png'>
+    <br>
+    <h3> Read - Single User</h3>
+    <br>
+    <img src='screenshots/task 5.2.png'>
+    <br>
+    <h3> Update - </h3>
+    <br>
+    <img src='screenshots/task 5.4.png'>
+    <h3> Delete - </h3>
+    <br>
+    <img src='screenshots/task 5.3.png'>
+    <br>
+</ol>
+
+
